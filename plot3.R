@@ -11,7 +11,7 @@ dd$Date <- as.Date(dd$Date, format="%d/%m/%Y")
 r <- dd[dd$Date == as.Date("2007-02-01", "%Y-%m-%d") | dd$Date == as.Date("2007-02-02", "%Y-%m-%d") ,]
 
 ### plot3
-png(filename = "figure/plot3.png" ,width = 480,height = 480 )
+png(filename = "plot3.png" ,width = 480,height = 480 )
 plot(r$Time,r$Sub_metering_1,type = "l",xlab = "",ylab = "Energy sub metering")
 lines(r$Time,r$Sub_metering_2, col = "red")
 lines(r$Time,r$Sub_metering_3, col = "blue")

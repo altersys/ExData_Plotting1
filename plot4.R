@@ -11,7 +11,7 @@ dd$Date <- as.Date(dd$Date, format="%d/%m/%Y")
 r <- dd[dd$Date == as.Date("2007-02-01", "%Y-%m-%d") | dd$Date == as.Date("2007-02-02", "%Y-%m-%d") ,]
 
 ### plot4
-png(filename = "figure/plot4.png" ,width = 480,height = 480 )
+png(filename = "plot4.png" ,width = 480,height = 480 )
 par(mfrow = c(2,2))
 plot(r$Time,r$Global_active_power,type = "l",xlab = "", ylab = "Global Active Power (Kilowatts)")
 plot(r$Time,r$Voltage,type = "l",xlab = "datetime", ylab = "Voltage")

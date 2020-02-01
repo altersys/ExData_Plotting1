@@ -10,8 +10,7 @@ dd$Date <- as.Date(dd$Date, format="%d/%m/%Y")
 # Filtering out all dates except 2007-02-01 and 2007-02-02
 r <- dd[dd$Date == as.Date("2007-02-01", "%Y-%m-%d") | dd$Date == as.Date("2007-02-02", "%Y-%m-%d") ,]
 
-
 ### plot2
-png(filename = "figure/plot2.png" ,width = 480,height = 480 )
+png(filename = "plot2.png" ,width = 480,height = 480 )
 with(r,plot(Time,Global_active_power,type = "l",xlab = "", ylab = "Global Active Power (Kilowatts)"))
 dev.off()
